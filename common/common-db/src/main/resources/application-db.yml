@@ -1,0 +1,29 @@
+spring:
+  #配置数据库连接驱动
+  datasource:
+    type: "com.alibaba.druid.pool.DruidDataSource"
+    #配置连接地址
+    druid:
+      url: ""
+      username: ""
+      password: ""
+      max-active: 20
+      #配置SQL图形化界面
+      #开启过滤防火墙
+      filter: "start,wall,slf4j"
+      web-stat-filter:
+        #开启监控信息
+        enabled: true
+        #拦截所有请求
+        url-pattern: "/*"
+        #排除不监控资源
+        exclusions: "*.js,*.jpg,*.css,/druid/*"
+      #配置拦截web显示界面
+      stat-view-servlet:
+        enabled: true
+        #访问监控的url路径
+        url-pattern: "/druid/*"
+        #配置账号密码
+        login-username: "admin"
+        login-password: "admin"
+

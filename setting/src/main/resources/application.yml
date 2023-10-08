@@ -1,0 +1,11 @@
+#端口号
+server:
+  port: 8080
+
+#应用程序的名字
+spring:
+  application:
+    name: "setting"
+    #配置启动加载环境
+  profiles:
+    active: "db,dev"

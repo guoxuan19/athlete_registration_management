@@ -1,4 +1,3 @@
-HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -31,9 +30,4 @@ build/
 
 ### VS Code ###
 .vscode/
-/.mvn
-/athlete_registration_management.iml
 /.gitignore
-/HELP.md
-/mvnw.cmd
-mvnw

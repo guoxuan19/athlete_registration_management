@@ -1,0 +1,27 @@
+spring:
+  #配置数据库连接驱动
+  datasource:
+    type: "com.alibaba.druid.pool.DruidDataSource"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    #配置连接地址
+    druid:
+      url: "jdbc:mysql://192.168.37.1:3306/athlete_registration_management?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false"
+      username: "test"
+      password: "root"
+      max-active: 8
+
+#配置mybatis-plus
+mybatis-plus:
+  #注册本地所有的mapper.xml资源文件
+  mapper-locations: "classpath:mapper/**/*.xml"
+  #配置entity别名
+  type-aliases-package: "com.qf.business.entity"
+  #开启别名大小转转换
+  configuration:
+    map-underscore-to-camel-case: true
+#debug日志配置mapper测试日志
+logging:
+  level:
+    com.qf.business.mapper: debug
+page helper:
+  reasonable: true
