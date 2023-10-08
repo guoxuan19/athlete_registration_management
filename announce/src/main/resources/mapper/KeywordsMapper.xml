@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.announce.mapper.KeywordsMapper">
+  <resultMap id="BaseResultMap" type="com.qf.announce.entity.Keywords">
+    <!--@mbg.generated-->
+    <!--@Table t_keywords-->
+    <id column="keywords_id" jdbcType="BIGINT" property="keywordsId" />
+    <result column="keywords_content" jdbcType="VARCHAR" property="keywordsContent" />
+    <result column="announce_id" jdbcType="BIGINT" property="announceId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    keywords_id, keywords_content, announce_id, `status`
+  </sql>
+</mapper>

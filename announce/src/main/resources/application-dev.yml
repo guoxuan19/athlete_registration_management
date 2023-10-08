@@ -15,7 +15,7 @@ mybatis-plus:
   #注册本地所有的mapper.xml资源文件
   mapper-locations: "classpath:mapper/**/*.xml"
   #配置entity别名
-  type-aliases-package: "com.qf.setting.entity"
+  type-aliases-package: "com.qf.announce.entity"
   #开启别名大小转转换
   configuration:
     map-underscore-to-camel-case: true

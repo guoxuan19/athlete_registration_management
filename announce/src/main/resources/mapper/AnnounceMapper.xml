@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.announce.mapper.AnnounceMapper">
+  <resultMap id="BaseResultMap" type="com.qf.announce.entity.Announce">
+    <!--@mbg.generated-->
+    <!--@Table t_announce-->
+    <id column="announce_id" jdbcType="BIGINT" property="announceId" />
+    <result column="announce_title" jdbcType="VARCHAR" property="announceTitle" />
+    <result column="announce_writer_account" jdbcType="VARCHAR" property="announceWriterAccount" />
+    <result column="announce_status" jdbcType="INTEGER" property="announceStatus" />
+    <result column="announce_keywords" jdbcType="VARCHAR" property="announceKeywords" />
+    <result column="announce_views_time" jdbcType="BIGINT" property="announceViewsTime" />
+    <result column="announce_operate_time" jdbcType="TIMESTAMP" property="announceOperateTime" />
+    <result column="announce_content" jdbcType="VARCHAR" property="announceContent" />
+    <result column="announce_file" jdbcType="VARCHAR" property="announceFile" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    announce_id, announce_title, announce_writer_account, announce_status, announce_keywords, 
+    announce_views_time, announce_operate_time, announce_content, announce_file
+  </sql>
+</mapper>
